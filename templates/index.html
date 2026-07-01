@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Link Shortener</title>
+
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            
+        }
+        h1 {
+            color:rgb(136, 0, 255)
+        }
+         input {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            color:rgb(136, 0, 255);
+        
+        }
+        input:hover{
+            border-color: blue;
+            box-shadow: 10px blue;
+        }
+       button{
+    background: linear-gradient(135deg,#6a11cb,#2575fc);
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    border-radius: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+button:hover{
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+    </style>
+</head>
+
+<body>
+
+    <h1>Link Shortener</h1>
+
+    <form action="/shorten" method="POST">
+
+        <input
+            type="text"
+            name="url"
+            placeholder="https://example.com"
+            style="width:400px;">
+
+        <button type="submit">
+            SHORTEN
+        </button>
+
+    </form>
+
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+
+    {% if short_url %}
+        <h3 style="color: rgb(136, 0, 255);">Your Short URL</h3>
+
+        <a href="{{ short_url }}">
+            {{ short_url }}
+        </a>
+    {% endif %}
+
+    <br><br>
+
+    <a href="/dashboard">
+        DASHBOARD
+    </a>
+
+</body>
+
+</html>
