@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 from flask import Flask, render_template, request, redirect, jsonify
 import json
 import random
@@ -68,6 +67,3 @@ def api():
     return jsonify(load_data())
 if __name__ == "__main__":
     app.run(debug=True)
-=======
-
->>>>>>> 96747b078944ef0dc709b0d4a4b73eff001ed817
