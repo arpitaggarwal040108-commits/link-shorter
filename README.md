@@ -100,11 +100,10 @@ http://127.0.0.1:5000
 ## 📷 Screenshots
 
 ### 🏠 Home Page
-
+<img width="1037" height="400" alt="image" src="https://github.com/user-attachments/assets/9de10b73-81cc-43bf-8960-cdc0e818c60c" />
 
 ### 📊 Dashboard
-
-
+<img width="1481" height="790" alt="image" src="https://github.com/user-attachments/assets/179f9fc7-2d05-4134-a814-9bf6dd4f8ead" />
 ---
 
 ## 🔌 API
