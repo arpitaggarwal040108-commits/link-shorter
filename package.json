@@ -1,0 +1,15 @@
+{
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "netlify dev --port 8889"
+  },
+  "dependencies": {
+    "@netlify/database": "^1.1.0",
+    "drizzle-orm": "1.0.0-beta.22"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^4.2.5",
+    "drizzle-kit": "1.0.0-beta.22",
+    "typescript": "^5.9.3"
+  }
+}
